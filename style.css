@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+/* 노멀라이즈 */
+*{
+ padding: 0;
+ margin: 0;
+ list-style: none; 
+ font-family: 'Noto Sans KR', sans-serif;
+ color: #5D5D5D;
+ box-sizing: border-box;
+}
+
+a{
+  color:inherit;
+  text-decoration: none;
+  display: block;
+}
+
+
+input {
+  border:none;
+}
+input:focus {
+  outline:none;
+}
+
+/* 라이브러리 */
+body{
+  width: 100%;
+  background-color: #ffffff;
+  font-size: 15px;
+}
+
+.con{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* style */
+/* header 시작 */
+header{
+  width: 1920px;
+  height: 120px;
+  position:sticky;
+  top:0;
+  z-index: 999;
+}
+
+/* logo 시작 */
+
+.logo{
+  width: 360px;
+  height: 120px;
+  position: relative;
+  float: left;
+}
+
+.logo>img{
+  width: 185px;
+  height: 40px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+/* menu-bar 시작 */
+.menu-bar{
+  width: 930px;
+  height: 120px;
+  float: left;
+}
+
+.menu-bar>.mainmenu>li{
+  float: left;
+}
+
+
+.menu-bar>.mainmenu>li>a{
+ width: 150px;
+ height: 120px;
+ text-align: center;
+ font-size: 20px;
+ line-height: 120px;
+ font-weight: bolder;
+
+}
+
+.menu-bar>.mainmenu>li>a:hover{
+  color:#AFCF44;
+}
+
+.submenu{
+  float:left;
+  width:  127.1428px;
+  height: 170px;
+  font-size: 17px;
+  display: none;
+}
+
+.submenu>.bg{
+  width: 1920px;
+  height: 290px;
+  background-color: #F8F5E1;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.submenu>.sub-wrap{
+  position: absolute;
+  width: 1920px;
+  height: 170px;
+  top:120px;
+  left:0;
+  display: flex;
+  justify-content: center;
+}
+
+.submenu>.sub-wrap>li{
+  width:  127.1428px;
+  height: 25px;
+  text-align: center;
+  line-height: 120px;
+  margin: 30px;
+}
+
+.submenu li>a:hover{
+  color:#652F8D;
+  font-weight: bold;
+}
+
+/* serch-wrap 시작 */
+.serch-wrap{
+  float: left;
+  width: 365px;
+  height: 120px;
+  position: relative;
+}
+
+.serch-wrap>.serch-box{
+  width: 365px;
+  height: 40px;
+  position: absolute;
+  top:50%;
+  transform: translate(0,-50%);
+}
+
+input {
+  width: 365px;
+  height: 40px;
+  background-color: rgba(248,245,225,0.5);
+  border:5px solid #AFCF44;
+  border-radius: 30px;
+  padding-left: 20px;
+}
+
+.input-box__placeholder {
+  position:relative;
+}
+
+.input-box__placeholder > label {
+  position:absolute;
+  top:50%;
+  left:20px;
+  transform:translatey(-50%);
+  font-size:17px;
+  color:#5D5D5D;
+}
+
+.input-box__placeholder > label.focus {
+  display:none;
+}
+
+.serch-icon{
+  font-weight: 1.2rem;
+  color:#652F8D;
+  position: absolute;
+  top: 32%;
+  right: 5%;
+}
+
+/* icon-wrap 시작  */
+.icon-wrap{
+  width: 259px;
+  height: 120px;
+  float: right;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-wrap>a{
+  float: left;
+  width: 80px;
+  height: 120px;
+  position: relative;
+}
+
+.icon-wrap>a>i{
+  float: left;
+  color:#652F8D;
+  font-size: 1.2rem;
+  line-height: 100px;
+}
+
+.icon-wrap>a>div{
+  width: 62px;
+  position: absolute;
+  top:50%;
+  left:-27%;
+  text-align: center;
+}
+
+.icon-wrap>.user-pen:hover>.fa-user-pen{
+  font-size: 1.5rem;
+}
+
+.icon-wrap>.door-open:hover>.fa-door-open{
+  font-size: 1.5rem;
+}
+
+/* main슬라이더 시작 */
+.main-slide{
+  width: 1920px;
+  height: 970px;
+  position: absolute;
+  top:0;
+  left:0;
+  float: left;
+  overflow: hidden;
+}
+
+.main-slide>.slides{
+  width: 5760px;
+  height: 970px;
+  float: left;
+}
+
+.main-slide>.slides>.slide{
+  float: left;
+}
+
+/* where-cu 시작 */
+.where-cu{
+  margin-top: 850px;
+  width: 1920px;
+  height: 980px;
+  border:3px solid red;
+  position: relative;
+}
+
+.where-cu>a>img{
+ margin-top: 224px;
+}
+
+.where-serch{
+  position: absolute;
+  left:19%;
+  top:57%;
+}
+
+.where-serch input {
+  width: 780px;
+  height: 100px;
+  background-color: #FDEDBF;
+  border-radius: 60px;
+  padding-left: 20px;
+}
+
+.input-box__placeholder {
+  position:relative;
+}
+
+.where-serch .input-box__placeholder > label {
+  position:absolute;
+  top:50%;
+  left:40px;
+  transform:translatey(-50%);
+  font-size:24px;
+  color:#5D5D5D;
+}
+
+.input-box__placeholder > label.focus {
+  display:none;
+}
+
+.where-serch > a{
+  font-size: 2.2rem;
+}

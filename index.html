@@ -4,9 +4,125 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CU redesign</title>
+  <script src="./js/jquery-1.12.3.js"></script>
+  <script src="./js/index.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  작업 시작
+  <header>
+    <div class="logo">
+      <img src="./img/nicetoCU.png" alt="mainlogo">
+    </div>
+    <div class="menu-bar con">
+      <ul class="mainmenu">
+        <li><a href="#">CU 소개</a>
+        <ul class="submenu">
+          <div class="bg"></div>
+          <div class="sub-wrap">
+          <li><a href="#">브랜드 스토리</a></li>
+          <li><a href="#">디지털 사보</a></li>
+          <li><a href="#">CU 갤러리</a></li>
+        </div>
+        </ul></li>
+        <li><a href="#">상품/서비스</a>
+          <ul class="submenu">
+            <div class="bg"></div>
+            <div class="sub-wrap">
+            <li><a href="#">전체 상품</a></li>
+            <li><a href="#">CU 차별화 상품</a></li>
+            <li><a href="#">행사 상품</a></li>
+            <li><a href="#">생활편의 서비스</a></li>
+            <li><a href="#">제휴카드</a></li>
+          </div>
+          </ul></li>
+        <li><a href="#">매장 안내</a></li>
+        <li><a href="#">멤버십</a>
+          <ul class="submenu">
+            <div class="bg"></div>
+            <div class="sub-wrap">
+            <li><a href="#">멤버십 소개</a></li>
+            <li><a href="#">포켓 CU</a></li>
+          </div>
+          </ul></li>
+        <li><a href="#">창업/상생</a>
+            <ul class="submenu">
+              <div class="bg"></div>
+              <div class="sub-wrap">
+              <li><a href="#">사업의 이해</a></li>
+              <li><a href="#">가맹조건</a></li>
+              <li><a href="#">창업설명회</a></li>
+              <li><a href="#">창업성공기</a></li>
+              <li><a href="#">점포물건</a></li>
+              <li><a href="#">상생혜택</a></li>
+              <li><a href="#">거래상담</a></li>
+            </div>
+            </ul></li>   
+            <li><a href="#">새로운소식</a>
+              <ul class="submenu">
+                <div class="bg"></div>
+                <div class="sub-wrap">
+                <li><a href="#">CU소식</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">이거어때</a></li>
+              </div>
+              </ul></li>
+
+
+          
+      </ul>
+    </div>
+    <div class="serch-wrap">
+      <div class="serch-box">
+        <div class="input-box">
+          <div class="input-box__placeholder">
+            <label for="search"> 지금 나에게 필요한건?</label>
+            <input type="text" id="search">
+          </div>
+        </div>
+        <a href="#"><i class="serch-icon fa-solid fa-magnifying-glass"></i></a> 
+      </div>
+    </div>
+    <div class="icon-wrap">
+      <a class="user-pen" href="#"><i class="fa-solid fa-user-pen"></i>
+        <div class="user-join">
+          <p>회원가입</p>
+        </div></a>
+      
+      <a class="door-open" href="#"><i class="fa-solid fa-door-open"></i>
+        <div class="login">
+          <p>로그인</p>
+      </div></a>
+      
+
+  </header>
+
+<div class="main-slide">
+  <div class="slides">
+   <div class="slide"><a href="#"><img src="./img/mainslide/slide1-1.png" alt="메인슬라이드1"></a></div>
+   <div class="slide"><a href="#"><img src="./img/mainslide/slide2-1.png" alt="메인슬라이드2"></a></div>
+   <div class="slide"><a href="#"><img src="./img/mainslide/slide3-1.png" alt="메인슬라이드3"></a></div>
+  </div>
+</div>
+
+
+<div class="where-cu">
+  <a href="#"><img src="./img/where CU.png" alt="우리동네CU찾기"></a>
+  <div class="where-serch">
+    <div class="input-box__placeholder">
+      <label for="search"> 점포명 또는 OO동을 입력해보세요.</label>
+      <input type="text" id="search">
+    </div>
+
+    <a href="#"><i class="serch-icon fa-solid fa-magnifying-glass"></i></a> 
+  </div>
+
+
+
+</div>
 </body>
 </html>
