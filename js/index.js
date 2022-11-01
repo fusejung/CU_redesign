@@ -1,6 +1,10 @@
 $(document).ready(function(){
 
-
+  $("body").imagesLoaded(function () {
+    setTimeout(function() {
+      $('.loading-page').addClass('hide');
+    }, 3500);
+  });
 
   $('.mainmenu>li').mouseover(function(){
     $(this).find('.submenu').stop().slideDown(500);

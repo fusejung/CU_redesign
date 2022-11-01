@@ -11,12 +11,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
 </head>
 <body>
+
+<div class="loading-page">
+  <div class="loading-page__box">
+    <div class="loading-page__box__typing">
+      나만의 놀이터 CU
+    </div>
+    <img src="./img/loding.png" alt="로딩페이지img">
+  </div>
+</div>  
+
 
 <!-- 헤더 -->
   <header>
@@ -140,6 +152,7 @@
 </div>
 
 
+<!-- pb, hot이슈 상품 -->
 <div class="pb-hot-wrap">
 <!-- 상품wrap 배경 -->
   <div class="product-bg">
@@ -161,7 +174,7 @@
       <div class="pro-wrap">
         <div class="pro-img"><a href="#"><img src="./img/pb/pb1.png" alt="pb상품1"></a></div>
         <a href="#" class="pro-text">
-          <p>CU캐시비그린</p>
+          <p class="highlight">CU캐시비그린</p>
           <p class="price">4,000원</p>
         </a>
       </div>
@@ -268,6 +281,36 @@
     </div>
   </div>
 </div>
+
+</div>
+
+<!-- story -->
+<div class="story-wrap">
+  <img src="./img/story/storybg.png" alt="story-bg">
+  <div class="story-wrap__box con">
+    <div class="story-wrap__box__text">
+      <p class="story-title">STORY</p>
+      <div class="sub-content">
+        <p>매일매일 신선함으로 가득 차는 CU는 </p>
+        <p>재치 있는 상품으로 하루를 충전하고, 365일 24시간 언제 어디서나</p>
+        <p>편리하게 원하는 것을 넘어 필요한 것까지 찾아주는 서비스로  </p>
+        <p>편의점 이상의 가치를 드립니다.</p>
+      </div>
+    </div>
+    <div class="story-wrap__box__imgbox">
+      <div class="story-wrap__box__imgbox__1">
+        <a href="#"><img src="./img/story/story.png" alt="성공스토리">
+        <p>성공 스토리</p>
+      </a>
+      </div>
+      <div class="story-wrap__box__imgbox__2">
+        <a href="#">
+        <p>CU 스토리</p>
+        <img src="./img/story/brandstory.png" alt="브랜드스토리">
+      </a>
+      </div>
+    </div>
+  </div>
 
 </div>
 
