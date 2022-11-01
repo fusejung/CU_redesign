@@ -48,14 +48,14 @@ $(document).ready(function(){
     })
   },5000)
 
-  // $(".product-box").slick({
-  //   prevArrow:
-  //     "<div class='btn-prev'><i class='fa-solid fa-angle-left'></i></div>",
-  //   nextArrow:
-  //     "<div class='btn-next'><i class='fa-solid fa-angle-right'></i></div>",    
-  // });
+  $(".product-box").slick({
+    prevArrow:
+      "<div class='btn-prev'><i class='fa-solid fa-angle-left'></i></div>",
+    nextArrow:
+      "<div class='btn-next'><i class='fa-solid fa-angle-right'></i></div>",    
+  });
       
-
+ 
 
 
 
