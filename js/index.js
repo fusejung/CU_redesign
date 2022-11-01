@@ -6,6 +6,7 @@ $(document).ready(function(){
     }, 3500);
   });
 
+
   $('.mainmenu>li').mouseover(function(){
     $(this).find('.submenu').stop().slideDown(500);
     $('.bg').stop().slideDown(500);
