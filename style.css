@@ -96,7 +96,7 @@ header{
   height: 120px;
   position:sticky;
   top:0;
-  z-index: 999;
+  z-index: 888;
 }
 
 /* logo 시작 */
@@ -647,4 +647,75 @@ input {
 
 .story-wrap__box__imgbox__2>a:hover>p::after {
   width:55%;
+}
+
+/* section-icon 시작 */
+.section-icon{
+  height: 360px;
+  margin-top: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-icon__box{
+  width: 220px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-icon__box__img{
+  width: 220px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-icon__box__img>a>img{
+  width: 150px;
+  transition: 0.5s;
+}
+
+.section-icon__box__img>a>img:hover{
+  scale: 1.2;
+}
+
+.section-icon__box__text{
+ width: 220px;
+ height: 100px;
+ text-align: center;
+ margin-top: 10px;
+}
+
+.section-icon__box__text>.section-icon__box__text__title{
+  font-size: 24px;
+  font-weight: bolder;
+  position: relative;
+}
+
+.section-icon__box__text>p{
+  padding-bottom: 4px;
+  font-size: 17px;
+}
+
+.section-icon__box:hover .section-icon__box__text__title{
+  color:#AFCF44;
+}
+
+.section-icon__box__text > .section-icon__box__text__title::after {
+  content:"";
+  position:absolute;
+  bottom:0;
+  width:0;
+  height:3px;
+  background-color:#AFCF44;
+  transition:0.3s;
+}
+
+.section-icon__box:hover  .section-icon__box__text__title::after {
+  width:80%;
+  left:50%;
+  transform:translatex(-50%);
 }
