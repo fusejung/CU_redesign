@@ -99,6 +99,11 @@ header{
   z-index: 888;
 }
 
+/* 헤더 색상변경 */
+header.changecolor {
+  background-color:#F8F5E1;
+}
+
 /* logo 시작 */
 
 .logo{

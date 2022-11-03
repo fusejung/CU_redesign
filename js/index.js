@@ -7,15 +7,32 @@ $(document).ready(function(){
   });
 
 
+
   $('.mainmenu>li').mouseover(function(){
     $(this).find('.submenu').stop().slideDown(500);
     $('.bg').stop().slideDown(500);
   }).mouseout(function(){
-    $(this).find('.submenu').stop().slideUp(500);
+    $(this).find('.submenu').stop().slideUp(300);
     $('.bg').stop().slideUp(500);
   });
   
+  console.clear();
 
+  function changeHeaderColor() {
+    $(window).scroll(function (event) {
+      let st = $(this).scrollTop();
+      console.log(st);
+      if(st > 0) {
+        $("header").addClass("changecolor");
+      }
+      else {
+        $("header").removeClass("changecolor");
+      }
+      
+    });
+  }
+  
+  changeHeaderColor();
 
 
   setInterval(function(){
