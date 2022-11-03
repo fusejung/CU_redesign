@@ -43,7 +43,7 @@ body{
 .loading-page {
   width:100vw;
   height:100vh;
-  background-color:#DBE120;
+  background-color: #DBE120;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -61,11 +61,11 @@ body{
 
 
 .loading-page__box__typing {
-  width: 14ch;
+  width: 13ch;
   overflow: hidden;
   border-right: 3px solid #652F8D;
   white-space: nowrap;
-  animation: typinganimation 2s steps(14), blink .5s step-end infinite; 
+  animation: typinganimation 2s steps(13), blink .3s step-end infinite; 
   font-size: 70px;
   font-weight: bolder;
   color:#652F8D;
@@ -155,7 +155,7 @@ header{
 }
 
 .submenu>.bg{
-  width: 1920px;
+  width: 100%;
   height: 290px;
   background-color: #F8F5E1;
   position: absolute;
@@ -320,7 +320,7 @@ input {
 /* where-cu 시작 */
 .where-cu{
   margin-top: 850px;
-  width: 1920px;
+  width: 100%;
   height: 980px;
   position: relative;
 }
@@ -389,7 +389,7 @@ input {
 
 /* .pb-hot-wrap 시작 */
 .pb-hot-wrap{
-  width: 1920px;
+  width: 100%;
   height: 720px;
   position: relative;
 }
@@ -464,31 +464,8 @@ input {
   position: relative;
 }
 
-/* highlight 효과 */
-.highlight{
-  display: inline-block; 
-  position: relative;
-}
 
-.highlight::after{
-  content:"";
-  width: 0;
-  height: 20px;
-  display: inline-block;
-  background: rgba(175,207,68,0.5);
-  position: absolute;
-  bottom:0;
-  left:50%;
-  transform:translatex(-50%);
-  z-index:-1;
-  transition: 0.3s all;
-}
-
-.pro-wrap:hover .highlight::after{
-  width:100%;
-}
-
-.pro-wrap:hover .highlight{
+.pro-wrap:hover .pro-text{
   font-weight: bold;
 }
 
@@ -527,7 +504,7 @@ input {
 
 /* story 시작 */
 .story-wrap{
-  width: 1920px;
+  width: 100%;
   height: 800px;
   margin-top: 320px;
   position: relative;
@@ -652,7 +629,7 @@ input {
 /* section-icon 시작 */
 .section-icon{
   height: 360px;
-  margin-top: 300px;
+  margin-top: 320px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -676,6 +653,10 @@ input {
 .section-icon__box__img>a>img{
   width: 150px;
   transition: 0.5s;
+}
+
+.section-icon__box__img>a>.section-icon__box__img__pocket{
+  width: 125px;
 }
 
 .section-icon__box__img>a>img:hover{
@@ -711,11 +692,136 @@ input {
   width:0;
   height:3px;
   background-color:#AFCF44;
-  transition:0.3s;
+  transition:0.5s;
 }
 
 .section-icon__box:hover  .section-icon__box__text__title::after {
   width:80%;
   left:50%;
   transform:translatex(-50%);
+}
+
+
+/* footer 시작 */
+.fo-line{
+  margin-top: 300px;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(93,93,93,0.5);
+  margin-bottom: 20px;
+}
+
+.footer{
+  display: flex;
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+
+.footer__section1{
+  width: 520px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: bolder;
+}
+
+.footer__section1__btlogo{
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__section1__btlogo>img{
+  width: 45.5px;
+  height: 28px;
+}
+
+.footer__section1__btlogo>a:hover{
+  color:#AFCF44;
+}
+
+.footer__section1>.footer__section1__tell{
+  font-weight: normal;
+}
+
+.footer__section2{
+  width: 160px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer__section2__title{
+  color:#652F8D;
+  font-weight: bolder;
+}
+
+.footer__section2__menu{
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__section2__menu>li:hover{
+  color:#AFCF44;
+}
+
+.footer__section3{
+  width: 464px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer__section3__text{
+  color:#652F8D;
+  font-weight: bolder;
+  margin-right: 100px;
+}
+
+.footer__section3__img>img{
+  width: 270px;
+  height: 129px;
+  margin-right: 10px;
+}
+
+
+.footer__section4{
+  width: 56px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.footer__section4>li{
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.footer__section4 i{
+  color:#652F8D;
+}
+
+.footer__section4 i:hover{
+  color:#AFCF44;
+}
+
+.footer__section4 p{
+  font-family: 'Fredoka One', cursive;
+  color:#652F8D;
+  font-size: 1.6rem;
+}
+
+.footer__section4 p:hover{
+  color:#AFCF44;
 }
