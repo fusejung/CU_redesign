@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+
+
+  // 로딩페이지
   $("body").imagesLoaded(function () {
     setTimeout(function() {
       $('.loading-page').addClass('hide');
@@ -7,7 +10,7 @@ $(document).ready(function(){
   });
 
 
-
+// 메뉴바
   $('.mainmenu>li').mouseover(function(){
     $(this).find('.submenu').stop().slideDown(500);
     $('.bg').stop().slideDown(500);
@@ -16,6 +19,7 @@ $(document).ready(function(){
     $('.bg').stop().slideUp(500);
   });
   
+  // 메뉴바 색깔변경
   console.clear();
 
   function changeHeaderColor() {
@@ -35,6 +39,7 @@ $(document).ready(function(){
   changeHeaderColor();
 
 
+  // 메인 슬라이드
   setInterval(function(){
     $('.slides').animate({'margin-left':'-1920px'},function(){
       $('.slide').first().appendTo('.slides')
@@ -43,7 +48,7 @@ $(document).ready(function(){
   },5000)
 
 
-
+// 검색창
   $("#search").focusin(function(){
     $(".input-box__placeholder > label").addClass("focus");
   });
@@ -62,7 +67,7 @@ $(document).ready(function(){
   });
 
 
-
+// 광고 슬라이드
   setInterval(function(){
     $('.ad-slides').animate({'margin-left':'-1200px'},function(){
       $('.ad-slide').first().appendTo('.ad-slides')
@@ -70,6 +75,8 @@ $(document).ready(function(){
     })
   },5000)
 
+
+  // 상품 슬라이드
   $(".product-box").slick({
     prevArrow:
       "<div class='btn-prev'><i class='fa-solid fa-angle-left'></i></div>",
@@ -79,6 +86,7 @@ $(document).ready(function(){
       
  
 
+ 
 
 
 

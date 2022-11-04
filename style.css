@@ -373,23 +373,68 @@ input {
 
 /* ad-banner 시작 */
 .ad-banner{
-  height: 600px;
+  height: 620px;
   margin-top: 20px;
-  margin-bottom: 320px;
+  margin-bottom: 250px;
   overflow: hidden;
+  position: relative;
 }
 
-.ad-banner>.ad-slides{
+
+.ad-banner__sliderwrap{
+  width: 1200px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ad-slides{
   width: 6000px;
   height: 600px;
 }
 
-.ad-banner .ad-slide{
+.ad-slide{
   float: left;
 }
 
 .ad-slide img{
+  width: 1200px;
+  height: 600px;
   border-radius: 50px;
+}
+
+.ad-slide img:hover{
+  opacity: 0.7;
+}
+
+.ad-banner__addview{
+  width: 100%;
+  height: 30px;
+  background-color: #652F8D;
+  border-radius: 30px;
+  font-size: 1rem;
+  color:#ffffff;
+  line-height: 30px;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.ad-banner__addview> a{
+  display: inline-block;
+}
+
+.ad-banner__addview i{
+  color:#ffffff;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.ad-slide:hover .ad-banner__addview{
+  opacity: 100;
 }
 
 /* .pb-hot-wrap 시작 */
@@ -420,7 +465,8 @@ input {
   top:35%;
 }
 
-.pro-title>.title{
+
+.pro-title .title{
   font-size: 48px;
   font-weight: bolder;
   padding-bottom: 10px;
@@ -428,9 +474,39 @@ input {
  
 }
 
+.pro-title:hover .title{
+  color:#AFCF44;
+}
+
 .sub-title{
   padding-top: 10px;
 }
+
+
+.pbpro-box__pro-title__addview{
+  display: inline-block;
+  width: 100%;
+  background-color: #AFCF44;
+  position: absolute;
+  top:50%;
+  right: 0;
+  text-align: right;
+  color:#ffffff;
+  border-radius: 15px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.pbpro-box__pro-title__addview i{
+  color:#ffffff;
+  margin-left:20px;
+  margin-right: 10px;
+}
+
+.pro-title:hover .pbpro-box__pro-title__addview{
+  opacity: 100;
+}
+
 
 /* product-box 시작  */
 .product-box{
@@ -449,6 +525,7 @@ input {
 .pro-wrap{
   width: 220px;
   height: 260px;
+ 
 }
 
 .pro-img{
@@ -457,6 +534,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .pro-wrap img{
@@ -486,11 +564,65 @@ input {
   color:#652F8D;
 }
 
+.pro-img__addview{
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.pro-img__addview i{
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color:#652F8D;
+  cursor: pointer;
+}
+
+.pro-wrap:hover .pro-img__addview{
+  display: block;
+}
+
+
+
 /* hot issue 상품 */
 .hot-box{
   height: 360px;
   position: relative;
 }
+
+.hot-box__pro-title__addview{
+  display: inline-block;
+  width: 100%;
+  background-color: #AFCF44;
+  position: absolute;
+  top:50%;
+  right: 0;
+  text-align: right;
+  color:#ffffff;
+  border-radius: 15px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.hot-box__pro-title__addview i{
+  color:#ffffff;
+  margin-left:20px;
+  margin-right: 10px;
+}
+
+.hot-box>.pro-title:hover .hot-box__pro-title__addview{
+  opacity: 1100;
+  transition: 0.5s;
+}
+
+
 
  .slick-slider .btn-prev,
  .slick-slider .btn-next {
