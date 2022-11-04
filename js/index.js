@@ -68,12 +68,19 @@ $(document).ready(function(){
 
 
 // 광고 슬라이드
-  setInterval(function(){
-    $('.ad-slides').animate({'margin-left':'-1200px'},function(){
-      $('.ad-slide').first().appendTo('.ad-slides')
-      $('.ad-slides').css({'margin-left':'0'})
-    })
-  },5000)
+  // setInterval(function(){
+  //   $('.ad-slides').animate({'margin-left':'-1200px'},function(){
+  //     $('.ad-slide').first().appendTo('.ad-slides')
+  //     $('.ad-slides').css({'margin-left':'0'})
+  //   })
+  // },5000)
+
+  $('.adslide-wrap').slick({
+    dots: true,
+    autoplay: true,
+    speed: 500,
+  });
+
 
 
   // 상품 슬라이드

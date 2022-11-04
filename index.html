@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CU redesign</title>
-  <script src="./js/jquery-1.12.3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./js/index.js"></script>
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -132,7 +132,7 @@
 
 <!-- 동네CU찾기 -->
 <div class="where-cu">
-  <a href="#"><img src="./img/where CU.png" alt="우리동네CU찾기"></a>
+  <a href="https://cu.bgfretail.com/store/list.do?category=store&sf=N"><img src="./img/where CU.png" alt="우리동네CU찾기"></a>
   <div class="where-serch">
     <div class="input-box__placeholder2">
       <label for="search2"> 점포명 또는 OO동을 입력해보세요.</label>
@@ -144,40 +144,54 @@
 </div>
  
 <!-- 광고배너 -->
-<div class="ad-banner con">
-  <div class="ad-banner__sliderwrap">
-  <div class="ad-slides">
-    <div class="ad-slide"><a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=845"><img src="./img/addimg/add1.png" alt="광고배너1"></a>
-      <a class="ad-banner__addview" href="https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5&sf=N">
-        CU의 다양한 소식들을 알아보세요.
-        <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-    <div class="ad-slide"><a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=844"><img src="./img/addimg/add2.png" alt="광고배너2"></a>
-      <a class="ad-banner__addview" href="https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5&sf=N">
-        CU의 다양한 소식들을 알아보세요.
-        <i class="fa-solid fa-arrow-right"></i>
-      </a></div>
-    <div class="ad-slide"><a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=846"><img src="./img/addimg/add3.png" alt="광고배너3"></a>
-      <a class="ad-banner__addview" href="https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5&sf=N">
-        CU의 다양한 소식들을 알아보세요.
-        <i class="fa-solid fa-arrow-right"></i>
-      </a></div>
-    <div class="ad-slide"><a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=849"><img src="./img/addimg/add4.png" alt="광고배너4"></a>
-      <a class="ad-banner__addview" href="https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5&sf=N">
-        CU의 다양한 소식들을 알아보세요.
-        <i class="fa-solid fa-arrow-right"></i>
-      </a></div>
-    <div class="ad-slide"><a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=829"><img src="./img/addimg/add5.png" alt="광고배너5"></a>
-      <a class="ad-banner__addview" href="https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5&sf=N">
-        CU의 다양한 소식들을 알아보세요.
-        <i class="fa-solid fa-arrow-right"></i>
-      </a></div>  
+<div class="adslide-wrap con">
+  <div class="adslide-wrap__img">
+    <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=845"><img src="./img/addimg/add1.png" alt="광고배너1"></a>
+    <a href="https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5&sf=N" class="adslide-wrap__img__view">
+      CU의 다양한 소식을 알아보세요
+      <i class="fa-solid fa-arrow-right"></i>
+    </a>
   </div>
+  <div class="adslide-wrap__img">
+    <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=844"><img src="./img/addimg/add2.png" alt="광고배너2"></a>
+    <a href="https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5&sf=N" class="adslide-wrap__img__view">
+      CU의 다양한 소식을 알아보세요
+      <i class="fa-solid fa-arrow-right"></i>
+    </a></div>
+  <div class="adslide-wrap__img">
+    <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=846"><img src="./img/addimg/add3.png" alt="광고배너3"></a>
+    <a href="https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5&sf=N" class="adslide-wrap__img__view">
+      CU의 다양한 소식을 알아보세요
+      <i class="fa-solid fa-arrow-right"></i>
+    </a></div>
+  <div class="adslide-wrap__img">
+    <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=849"><img src="./img/addimg/add4.png" alt="광고배너4"></a>
+    <a href="https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5&sf=N" class="adslide-wrap__img__view">
+      CU의 다양한 소식을 알아보세요
+      <i class="fa-solid fa-arrow-right"></i>
+    </a></div>
+  <div class="adslide-wrap__img">
+    <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=829">
+      <img src="./img/addimg/add5.png" alt="광고배너5"></a>
+    <a href="https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5&sf=N" class="adslide-wrap__img__view">
+      CU의 다양한 소식을 알아보세요
+      <i class="fa-solid fa-arrow-right"></i>
+    </a></div>
+  <div class="adslide-wrap__img">
+      <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=842">
+        <img src="./img/addimg/add6.png" alt="광고배너6"></a>
+      <a href="https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5&sf=N" class="adslide-wrap__img__view">
+        CU의 다양한 소식을 알아보세요
+        <i class="fa-solid fa-arrow-right"></i>
+    </a></div>
+  <div class="adslide-wrap__img">
+      <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=847">
+        <img src="./img/addimg/add7.png" alt="광고배너7"></a>
+      <a href="https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5&sf=N" class="adslide-wrap__img__view">
+        CU의 다양한 소식을 알아보세요
+        <i class="fa-solid fa-arrow-right"></i>
+    </a></div>
 </div>
- 
-</div>
-
 
 <!-- pb, hot이슈 상품 -->
 <div class="pb-hot-wrap">
@@ -211,8 +225,9 @@
               <i class="fa-regular fa-heart"></i>
               <i class="fa-solid fa-heart"></i>
             </div>
-            
-            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="pro-img__addview__cartbox">
+              <i class="fa-solid fa-cart-plus"></i>
+          </div>
           </div>
         
         </div>
@@ -223,14 +238,33 @@
        
       </div>
       <div class="pro-wrap">
-        <div class="pro-img"><a href="#"><img src="./img/pb/pb2.png" alt="pb상품2"></a></div>
+        <div class="pro-img"><a href="#"><img src="./img/pb/pb2.png" alt="pb상품2"></a>
+          <div class="pro-img__addview">
+            <div class="pro-img__addview__heartbox">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="pro-img__addview__cartbox">
+              <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          </div>
+        </div>
         <a href="#" class="pro-text">
           <p>HEYROO마늘맛콘스낵</p>
           <p class="price">1,700원</p>
         </a>
       </div>
       <div class="pro-wrap">
-        <div class="pro-img"><a href="#"><img src="./img/pb/pb3.png" alt="pb상품3"></a></div>
+        <div class="pro-img"><a href="#"><img src="./img/pb/pb3.png" alt="pb상품3"></a>
+          <div class="pro-img__addview">
+            <div class="pro-img__addview__heartbox">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="pro-img__addview__cartbox">
+              <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          </div></div>
         <a href="#" class="pro-text">
           <p>HEYROO속초홍게라면</p>
           <p class="price">1,800원</p>
@@ -239,7 +273,16 @@
     </div>
     <div class="pro-slides">
       <div class="pro-wrap">
-        <div class="pro-img"><a href="#"><img src="./img/pb/pb4.png" alt="pb상품4"></a></div>
+        <div class="pro-img"><a href="#"><img src="./img/pb/pb4.png" alt="pb상품4"></a>
+          <div class="pro-img__addview">
+            <div class="pro-img__addview__heartbox">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="pro-img__addview__cartbox">
+              <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          </div></div>
         <a href="#" class="pro-text">
           <p>뉴GET커피블랜드500g</p>
           <p class="price">17,000원</p> 
@@ -247,14 +290,32 @@
       
       </div>
       <div class="pro-wrap">
-        <div class="pro-img"><a href="#"><img src="./img/pb/pb5.png" alt="pb상품5"></a></div>
+        <div class="pro-img"><a href="#"><img src="./img/pb/pb5.png" alt="pb상품5"></a>
+          <div class="pro-img__addview">
+            <div class="pro-img__addview__heartbox">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="pro-img__addview__cartbox">
+              <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          </div></div>
         <a href="#" class="pro-text">
           <p>HEYROO콘치즈그라탕</p>
           <p class="price">3,900원</p>
         </a>
       </div>
       <div class="pro-wrap">
-        <div class="pro-img"><a href="#"><img src="./img/pb/pb6.png" alt="pb상품6"></a></div>
+        <div class="pro-img"><a href="#"><img src="./img/pb/pb6.png" alt="pb상품6"></a>
+          <div class="pro-img__addview">
+            <div class="pro-img__addview__heartbox">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="pro-img__addview__cartbox">
+              <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          </div></div>
         <a href="#" class="pro-text">
           <p>GET허쉬초코카페모카30g</p>
           <p class="price">600원</p>
@@ -284,21 +345,49 @@
 
     <div class="pro-slides">
       <div class="pro-wrap">
-        <div class="pro-img"><a href="#"><img src="./img/hot/hot1.png" alt="핫이슈1"></a></div>
+        <div class="pro-img"><a href="#"><img src="./img/hot/hot1.png" alt="핫이슈1"></a>
+          <div class="pro-img__addview">
+            <div class="pro-img__addview__heartbox">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="pro-img__addview__cartbox">
+              <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          </div>
+        </div>
         <a href="#" class="pro-text">
           <p>T머니)세븐틴-(B)퍼포먼스</p>
           <p class="price">6,000원</p>
         </a>
       </div>
       <div class="pro-wrap">
-        <div class="pro-img"><a href="#"><img src="./img/hot/hot2.jpg" alt="핫이슈2"></a></div>
+        <div class="pro-img"><a href="#"><img src="./img/hot/hot2.jpg" alt="핫이슈2"></a>
+          <div class="pro-img__addview">
+            <div class="pro-img__addview__heartbox">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="pro-img__addview__cartbox">
+              <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          </div></div>
         <a href="#" class="pro-text">
           <p>짱구는카레대왕</p>
           <p class="price">4,900원</p>
         </a>
       </div>
       <div class="pro-wrap">
-        <div class="pro-img"><a href="#"><img src="./img/hot/hot3.png" alt="핫이슈3"></a></div>
+        <div class="pro-img"><a href="#"><img src="./img/hot/hot3.png" alt="핫이슈3"></a>
+          <div class="pro-img__addview">
+            <div class="pro-img__addview__heartbox">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="pro-img__addview__cartbox">
+              <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          </div></div>
         <a href="#" class="pro-text">
           <p>도)듀록목살찹스테이크</p>
           <p class="price">6,900원</p>
@@ -307,7 +396,16 @@
     </div>
     <div class="pro-slides">
       <div class="pro-wrap">
-        <div class="pro-img"><a href="#"><img src="./img/hot/hot4.jpg" alt="핫이슈4"></a></div>
+        <div class="pro-img"><a href="#"><img src="./img/hot/hot4.jpg" alt="핫이슈4"></a>
+          <div class="pro-img__addview">
+            <div class="pro-img__addview__heartbox">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="pro-img__addview__cartbox">
+              <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          </div></div>
         <a href="#" class="pro-text">
           <p>정육면체)깨부수면컵</p>
           <p class="price">4,500원</p> 
@@ -315,14 +413,32 @@
       
       </div>
       <div class="pro-wrap">
-        <div class="pro-img"><a href="#"><img src="./img/hot/hot5.jpg" alt="핫이슈5"></a></div>
+        <div class="pro-img"><a href="#"><img src="./img/hot/hot5.jpg" alt="핫이슈5"></a>
+          <div class="pro-img__addview">
+            <div class="pro-img__addview__heartbox">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="pro-img__addview__cartbox">
+              <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          </div></div>
         <a href="#" class="pro-text">
           <p>도)이금기삼겹구이정식</p>
           <p class="price">5,500원</p>
         </a>
       </div>
       <div class="pro-wrap">
-        <div class="pro-img"><a href="#"><img src="./img/hot/hot6.png" alt="핫이슈6"></a></div>
+        <div class="pro-img"><a href="#"><img src="./img/hot/hot6.png" alt="핫이슈6"></a>
+          <div class="pro-img__addview">
+            <div class="pro-img__addview__heartbox">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="pro-img__addview__cartbox">
+              <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          </div></div>
         <a href="#" class="pro-text">
           <p>도)자이언트중화양장피</p>
           <p class="price">9,900원</p>
