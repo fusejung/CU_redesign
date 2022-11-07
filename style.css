@@ -61,13 +61,13 @@ body{
 
 
 .loading-page__box__typing {
-  width: 13ch;
+  width: 15ch;
   overflow: hidden;
-  border-right: 5px solid #652F8D;
+  /* border-right: 5px solid #652F8D; */
   white-space: nowrap;
-  animation: typinganimation 2s steps(13), blink .3s step-end infinite; 
-  font-size: 70px;
+  animation: typinganimation 2s steps(10), blink .3s step-end infinite; 
   font-weight: bolder;
+  font-size: 4rem;
   color:#652F8D;
   margin-bottom: 50px;
   font-family: 'Gamja Flower', cursive;
