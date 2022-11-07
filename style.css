@@ -63,7 +63,7 @@ body{
 .loading-page__box__typing {
   width: 13ch;
   overflow: hidden;
-  border-right: 3px solid #652F8D;
+  border-right: 5px solid #652F8D;
   white-space: nowrap;
   animation: typinganimation 2s steps(13), blink .3s step-end infinite; 
   font-size: 70px;
@@ -113,7 +113,13 @@ header.changecolor {
   float: left;
 }
 
-.logo>img{
+.logo a{
+  width: 360px;
+  height: 120px;
+  position: relative;
+}
+
+.logo img{
   width: 185px;
   height: 40px;
   position: absolute;
@@ -800,18 +806,81 @@ input {
 
 
 /* instargram 시작 */
-.instar-wrap{
+:root {
+  --instar-wrap__slider--view-width:854px;
+  --instar-wrap__slider--total-items-count:6;
+  --instar-wrap__slider--view-items-count:2;
+  --instar-wrap__slider--item-width:calc(var(--instar-wrap__slider--view-width) / var(--instar-wrap__slider--view-items-count));
+}
+
+
+ .instar-wrap{
   height: 600px;
-  border:2px solid gold;
+  
   display: flex;
   margin-top: 320px;
+  display: flex;
+ }
+
+
+.instar-wrap__slider{
+  width: var(--instar-wrap__slider--view-width);
+  height: 100%;
+  
+  overflow: hidden;
 }
+
+.instar-wrap__slider__slide{
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.instar-wrap__slider__slide>li>a{
+  width: var(--instar-wrap__slider--item-width);
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.instar-wrap__slider__slide img{
+  width: 100%;
+  display: block;
+  transition: 0.3s;
+}
+
+.instar-wrap__slider__slide li:hover img{
+  scale: 1.2;
+}
+
 
 .instar-wrap__textbox{
   width: 346px;
   height: 100%;
   position: relative;
-  border:2px solid red;
+  
+}
+
+.instar-wrap__slider>ul{
+  animation-name: ani-1;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ani-1 {
+  0% {
+    left:0;
+  }
+  
+  100% {
+    left:calc(var(--instar-wrap__slider--item-width) * var(--instar-wrap__slider--total-items-count) * -1);
+  }
+}
+
+.instar-wrap__slider > ul:hover {
+  animation-play-state:paused;
 }
 
 .instar-wrap__textbox__text{
@@ -838,35 +907,10 @@ input {
 }
 
 
-.instar-wrap__slidebox{
-  width: 854px;
-  height: 100%;
-  border:2px solid blue;
-  overflow: hidden;
-}
-
-.instar-wrap__slidebox__slider{
-  width: 2200px;
-  height: 600px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  animation-name: slinein;
-  animation-duration: 3s;
-  animation-timing-function: ease-in;
-}
-
-.instar-wrap__slidebox__slider__slide img{
-  width: 300px;
-  height: 300px;
-}
-
-
-
 /* section-icon 시작 */
 .section-icon{
   height: 360px;
-  margin-top: 280px;
+  margin-top: 250px;
   display: flex;
   align-items: center;
   justify-content: space-between;
