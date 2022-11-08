@@ -8,6 +8,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./js/index.js"></script>
   <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
@@ -28,7 +30,9 @@
     <div class="loading-page__box__typing">
       나만의 놀이터 CU
     </div>
-    <img src="./img/loding.png" alt="로딩페이지img">
+    <img src="./img/loding.png" alt="로딩페이지img"
+    data-aos="fade-up"
+    data-aos-duration="3000">
   </div>
 </div>  
 
@@ -133,7 +137,9 @@
 <!-- 동네CU찾기 -->
 <div class="where-cu">
   <a href="https://cu.bgfretail.com/store/list.do?category=store&sf=N"><img src="./img/where CU.png" alt="우리동네CU찾기"></a>
-  <div class="where-serch">
+  <div class="where-serch"
+  data-aos="fade-up"
+  data-aos-duration="1500">
     <div class="input-box__placeholder2">
       <label for="search2"> 점포명 또는 OO동을 입력해보세요.</label>
       <input type="text" id="search2">
@@ -144,7 +150,11 @@
 </div>
  
 <!-- 광고배너 -->
-<div class="adslide-wrap con">
+<div class="adslide-wrap con"
+data-aos="fade-right"
+     data-aos-easing="linear"
+     data-aos-duration="00"
+>
   <div class="adslide-wrap__img">
     <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=845"><img src="./img/addimg/add1.png" alt="광고배너1"></a>
     <a href="https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5&sf=N" class="adslide-wrap__img__view">
@@ -215,7 +225,10 @@
   
   </div>
 
-  <div class="product-box">
+  <div class="product-box"
+  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
 
     <div class="pro-slides">
       <div class="pro-wrap">
@@ -341,7 +354,10 @@
    
   </div>
 
-  <div class="product-box">
+  <div class="product-box"
+  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
 
     <div class="pro-slides">
       <div class="pro-wrap">
@@ -464,12 +480,16 @@
       </div>
     </div>
     <div class="story-wrap__box__imgbox">
-      <div class="story-wrap__box__imgbox__1">
+      <div class="story-wrap__box__imgbox__1"
+      data-aos="fade-up"
+      data-aos-duration="3000">
         <a href="https://cu.bgfretail.com/franchise/successView.do?category=franchise&depth2=5&idx=62"><img src="./img/story/story.png" alt="성공스토리">
         <p>성공 스토리</p>
       </a>
       </div>
-      <div class="story-wrap__box__imgbox__2">
+      <div class="story-wrap__box__imgbox__2"
+      data-aos="fade-down"
+      data-aos-duration="3000">
         <a href="https://cu.bgfretail.com/brand_info/story.do?category=brand_info&sf=N">
         <p>CU 스토리</p>
         <img src="./img/story/brandstory.png" alt="브랜드스토리">
@@ -482,7 +502,9 @@
 
 <!-- instargram -->
 <div class="instar-wrap con">
-  <div class="instar-wrap__slider">
+  <div class="instar-wrap__slider"
+  data-aos="fade-up"
+  data-aos-duration="1500">
     <ul class="instar-wrap__slider__slide">
       <li><a href="#"><img src="./img/instar/instar1.png" alt="인스타1"></a></li>
       <li><a href="#"><img src="./img/instar/instar2.png" alt="인스타2"></a></li>
@@ -509,7 +531,9 @@
 
 
 <!-- 아이콘 section -->
-<div class="section-icon con">
+<div class="section-icon con"
+data-aos="fade-up"
+     data-aos-duration="1500">
   <div class="section-icon__box">
     <div class="section-icon__box__img">
       <a href="#"><img class="section-icon__box__img__pocket" src="./img/pocketcu/pocket.png" alt="포켓CU"></a>

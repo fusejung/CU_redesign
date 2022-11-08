@@ -910,7 +910,8 @@ input {
 /* section-icon 시작 */
 .section-icon{
   height: 360px;
-  margin-top: 250px;
+  margin-top: 220px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;

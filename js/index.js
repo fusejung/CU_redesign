@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
 
+  AOS.init();
+
 
   // 로딩페이지
   $("body").imagesLoaded(function () {
