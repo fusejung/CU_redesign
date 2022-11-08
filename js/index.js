@@ -15,10 +15,10 @@ $(document).ready(function(){
 // 메뉴바
   $('.mainmenu>li').mouseover(function(){
     $(this).find('.submenu').stop().slideDown(500);
-    $('.bg').stop().slideDown(500);
+    
   }).mouseout(function(){
-    $(this).find('.submenu').stop().slideUp(300);
-    $('.bg').stop().slideUp(500);
+    $(this).find('.submenu').stop().slideUp(500);
+    
   });
   
   // 메뉴바 색깔변경
@@ -69,13 +69,7 @@ $(document).ready(function(){
   });
 
 
-// 광고 슬라이드
-  // setInterval(function(){
-  //   $('.ad-slides').animate({'margin-left':'-1200px'},function(){
-  //     $('.ad-slide').first().appendTo('.ad-slides')
-  //     $('.ad-slides').css({'margin-left':'0'})
-  //   })
-  // },5000)
+
 
   $('.adslide-wrap').slick({
     dots: true,
