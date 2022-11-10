@@ -28,7 +28,7 @@ $(document).ready(function(){
     $(window).scroll(function (event) {
       let st = $(this).scrollTop();
       console.log(st);
-      if(st > 0) {
+      if(st > 100) {
         $("header").addClass("changecolor");
       }
       else {
