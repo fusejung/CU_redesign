@@ -96,7 +96,7 @@ from {
 
 /* header 시작 */
 header{
-  width: 1920px;
+  width: 100%;
   height: 120px;
   position:sticky;
   top:0;
@@ -111,7 +111,7 @@ header.changecolor {
 /* logo 시작 */
 
 .logo{
-  width: 360px;
+  width: 340px;
   height: 120px;
   position: relative;
   float: left;
@@ -310,7 +310,7 @@ input {
 
 /* main슬라이더 시작 */
 .main-slide{
-  width: 1920px;
+  width: 100%;
   height: 970px;
   position: absolute;
   top:0;
@@ -456,7 +456,7 @@ input {
   left:0;
 }
 
-.product-bg{
+.product-bg img{
   width: 100%;
 }
 
@@ -692,6 +692,10 @@ input {
   height: 800px;
   margin-top: 320px;
   position: relative;
+}
+
+.story-wrap img{
+  width: 100%;
 }
 
 .story-wrap__box{
